@@ -1,38 +1,75 @@
-.App {
+/* OctoFit Tracker – global styles */
+
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ── Navbar ── */
+.octofit-navbar {
+  background: linear-gradient(90deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.octofit-navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #e94560 !important;
+}
+
+.octofit-navbar .nav-link {
+  color: #a8b2d8 !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.octofit-navbar .nav-link:hover,
+.octofit-navbar .nav-link.active {
+  color: #e94560 !important;
+}
+
+/* ── Page cards ── */
+.octofit-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+.octofit-card .card-header {
+  background: linear-gradient(90deg, #1a1a2e 0%, #0f3460 100%);
+  color: #fff;
+  border-radius: 12px 12px 0 0 !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.85rem 1.25rem;
+}
+
+/* ── Tables ── */
+.octofit-table thead {
+  background-color: #0f3460;
+  color: #fff;
+}
+
+.octofit-table tbody tr:hover {
+  background-color: #e8eaf6;
+}
+
+/* ── Badges ── */
+.badge-marvel  { background-color: #e23636; color: #fff; }
+.badge-dc      { background-color: #0074e8; color: #fff; }
+
+/* ── Difficulty badges ── */
+.badge-easy   { background-color: #28a745; color: #fff; }
+.badge-medium { background-color: #ffc107; color: #212529; }
+.badge-hard   { background-color: #dc3545; color: #fff; }
+
+/* ── Footer spacer ── */
+.page-footer {
+  margin-top: 3rem;
+  padding: 1rem 0;
   text-align: center;
+  color: #6c757d;
+  font-size: 0.85rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
